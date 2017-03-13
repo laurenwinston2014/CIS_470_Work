@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box; /*This line makes sure the width and height are the correct sizes no matter the padding */
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+body {
+    background-color: linen;
+
+}
+.container{
+    margin: auto;
+    width: 90%;
+}
+.col-1 {width: 20%;}
+.col-2 {width: 40%;}
+.col-3 {width: 60%;}
+.col-4 {width: 80%;}
+.col-5 {width: 100%;}
+.col-6 {width: 10%;}
+.col-7 {width: 50%;}
+
+* {
+    padding-top: 1px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+}
+
+h3, h2{
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+[class*='col-'] { /* This css rule applies to any element that has the string "col-" in its class*/
+    float: left;
+    min-height: 1px;
+    /*-- our gutter inside each cell around it's content, change the value to see how it works--*/
+    padding: 0px;
+
+    border: .5px solid #ff899d;
+    /**********Another way to set background color: Change the number values in it and see what happens**********/
+    background: rgba(111, 175, 161, 0.3);
+    min-height: 20px;
+}
+.row1 .col-6, .row1 .col-7{
+    min-height: 45px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+.row2 .col-5{
+    min-height: 40px;
+}
+.row3 .col-1, .row3 .col-2{
+    min-height: 372px;
+}
+
+.row3 .col-1{
+    padding-top: 80px;
+    padding-bottom: 60px;}
+
+.row4 .col-1, .row4 .col-2{
+    min-height: 100px;
+}
+
+.row5 .col-5{
+    min-height: 25px;
+}
+
+.row6 .col-4, .row6 .col-1{
+    min-height: 165px;
+}
+
+.row6 .col-1{
+    padding: 5px;
+}
+
+.row7 .col-4, .row7 .col-1{
+    min-height: 180px;
+}
+
+.row8 .col-1{
+    min-height: 120px;
+}
+
+.row9 .col-1, .row9 .col-3{
+    min-height: 220px;
+}
+
+.row10 .col-1, .row10 .col-3{
+    min-height: 350px;
+}
+
+.row11 .col-1{
+    min-height: 280px;
+}
+
+.row12 .col-1, .row12 .col-3{
+    min-height: 120px;
+}
+
+.row13 .col-1{
+    min-height: 170px;
+}
+
+.noborders {
+    border: 0px
+}
+
+
+h1 {
+    color: maroon;
+    margin-left: 120px;
+}
